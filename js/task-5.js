@@ -8,7 +8,14 @@
 //     Индия - 80 кредитов
 //     Ямайка - 120 кредитов
 
-const delivery = prompt ('Укажите страну для доставки товара').toLocaleLowerCase();
+
+let delivery = prompt('Укажите страну для доставки товара');
+
+if (delivery === null) {
+    console.log('Отменено пользователем');
+} else {
+    delivery = delivery.toLocaleLowerCase();
+}
 
 let country;
 let price;
@@ -48,5 +55,4 @@ switch (delivery) {
     default:
         message = `В вашей стране доставка не доступна`;
 }
-
 alert(message);

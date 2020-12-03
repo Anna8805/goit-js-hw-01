@@ -17,6 +17,5 @@ if (userInput === null) {
     message = 'Добро пожаловать!';      
 } else {
     message = 'Доступ запрещен, неверный пароль!';
-    alert(message);
 }
 alert(message);
